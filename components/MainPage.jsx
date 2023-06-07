@@ -1,10 +1,15 @@
-const React = require('react');
-const Layout = require('./Layout');
+const React = require("react");
+const Layout = require("./Layout");
+const Food = require("./Food");
 
-function MainPage({ title, user }) {
+function MainPage({ title, user, alldeals }) {
   return (
     <Layout title={title} user={user}>
-      <h1>Main page</h1>
+      <div className="cars_list">
+        {alldeals.map((fod) => (
+          <Food fod={fod} />
+        ))}
+      </div>
     </Layout>
   );
 }

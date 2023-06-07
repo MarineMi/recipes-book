@@ -5,9 +5,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-.jobs_list {
-  margin: 0 auto;
+.cars_list{
+  margin:0 auto;
   width: 900px;
   display: flex;
   flex-wrap: wrap;
