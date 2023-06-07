@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const MainPage = require("../../components/MainPage");
+const { Recipe } = require("../../db/models");
 
 router.get("/", (req, res) => {
   let possible = "abcdefghijklmnopqrstuvwxyz";
@@ -35,8 +36,17 @@ router.get("/:Fodid", (req, res) => {
   }
 });
 
+router.post("/:idPP", async (req, res) => {
+  const { idPP } = req.params;
+  const addRec = await Recipe.create({
+    user_id: req.session.userId,
+    recipe: idPP,
+  });
+});
+
 
 router.post("/", (req, res) => {
   res.redirect(`./${req.body.name}`)
 })
+
 module.exports = router;

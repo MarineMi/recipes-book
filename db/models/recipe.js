@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
-const { Model } = require('sequelize');
+const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class Recipe extends Model {
     static associate({ User }) {
-      this.belongsTo(User, { foreignKey: 'user_id' });
+      this.belongsTo(User, { foreignKey: "user_id" });
     }
   }
   Recipe.init(
@@ -14,18 +14,18 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.INTEGER,
         references: {
-          model: 'Users',
-          key: 'id',
+          model: "Users",
+          key: "id",
         },
       },
       recipe: {
         allowNull: false,
-        type: DataTypes.TEXT,
+        type: DataTypes.INTEGER,
       },
     },
     {
       sequelize,
-      modelName: 'Recipe',
+      modelName: "Recipe",
     }
   );
   return Recipe;
