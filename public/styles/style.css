@@ -5,9 +5,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.cars_list{
-  margin:0 auto;
-  width: 900px;
+.cars_list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
