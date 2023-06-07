@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const MainPage = require("../../components/MainPage");
+const { Recipe } = require("../../db/models");
 
 router.get("/", (req, res) => {
   try {
@@ -18,5 +19,14 @@ router.get("/", (req, res) => {
     res.json(message);
   }
 });
+
+router.post("/:idPP", async (req, res) => {
+  const { idPP } = req.params;
+  const addRec = await Recipe.create({
+    user_id: req.session.userId,
+    recipe: idPP,
+  });
+});
+
 
 module.exports = router;

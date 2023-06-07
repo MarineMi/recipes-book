@@ -18,16 +18,13 @@ function NavBar({ user }) {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="/users"
+                    href="/favorites"
                   >
                     Избранное
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                  >
+                  <a className="nav-link active" aria-current="page">
                     {user.name}
                   </a>
                 </li>
