@@ -1,20 +1,20 @@
 require("@babel/register");
 
 const express = require("express");
-const path = require("path");
-const ssr = require("./middleware/ssr");
+const config = require("./config/config");
+const router = require('express').Router();
 const app = express();
 
-const PORT = 3000;
+const PORT = 3030;
+config(app);
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
-app.use(ssr);
+const MainRoute = require('./routes/views/main.routes');
+const AuthRoute = require('./routes/views/auth.routes');
+const AuthApiRoute = require('./routes/api/auth.routes');
 
-const mainRoute = require("./routes/main.routes");
-
-app.use("/main", mainRoute);
+app.use('/', MainRoute);
+app.use('/api/auth', AuthApiRoute);
+app.use('/auth', AuthRoute);
 
 app.listen(PORT, () => {
   console.log(`Этот сервер умирает на ${PORT} порту`);

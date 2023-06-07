@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(79, 75, 74);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jobs_list {
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+}
