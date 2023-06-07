@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const MainPage = require("../components/MainPage");
+const MainPage = require("../../components/MainPage")
 
 
 
@@ -10,15 +10,12 @@ router.get("/", (req, res) => {
     fetch(`${SEARCH_URL}?f=${letter}`)
       .then((response) => response.json())
       .then((data) => {
-        res.send();
-        console.log(data);
-        res.send(res.renderComponent(MainPage, { data }));
+        console.log(data)
+        res.send(res.renderComponent(MainPage));
       })
       .catch((error) => {
         console.error(error);
       });
-
-    res.send("2");
   } catch ({ message }) {
     res.json(message);
   }
