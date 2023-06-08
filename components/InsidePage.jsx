@@ -4,9 +4,9 @@ const Layout = require("./Layout");
 function InsidePage({ title, alldeals, user }) {
   return (
     <Layout title={title} user={user}>
-      <h1>{alldeals[0].strMeal}</h1>
-      <img src={alldeals[0].strMealThumb} alt="" />
-      <div>{alldeals[0].strInstructions}</div>
+      <h1 className="headinf" >{alldeals[0].strMeal}</h1>
+      <img className="imginf" src={alldeals[0].strMealThumb} alt="" />
+      <div className="infoinf" >{alldeals[0].strInstructions}</div>
     </Layout>
   );
 }

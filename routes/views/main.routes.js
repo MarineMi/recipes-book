@@ -67,10 +67,13 @@ router.get("/:Fodid", (req, res) => {
 
 router.post("/favorite", async (req, res) => {
   const { id } = req.body;
-  const addRec = await Recipe.create({
-    user_id: req.session.userId,
-    idMeal: id,
-  });
+  const asd = await Recipe.findOne({ raw: true, where: { idMeal: id } });
+  if (!asd) {
+    await Recipe.create({
+      user_id: req.session.userId,
+      idMeal: id,
+    });
+  }
 });
 
 router.post("/", (req, res) => {

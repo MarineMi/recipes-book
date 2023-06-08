@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(79, 75, 74);
+  background-color: rgb(81 205 244);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -64,3 +64,15 @@ img.background {
   color: white !important;
 }
 
+.imginf {
+  height: 300px;
+}
+.headinf,
+.infoinf {
+  color: aliceblue;
+  margin-top: 15px;
+}
+.infoinf {
+  margin-left: 100px;
+  margin-right: 100px;
+}
