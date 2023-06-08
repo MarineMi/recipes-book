@@ -36,17 +36,16 @@ router.get("/:Fodid", (req, res) => {
   }
 });
 
-router.post("/:idPP", async (req, res) => {
-  const { idPP } = req.params;
+router.post("/favorite", async (req, res) => {
+  const { id } = req.body;
   const addRec = await Recipe.create({
     user_id: req.session.userId,
-    recipe: idPP,
+    idMeal: id,
   });
 });
 
-
 router.post("/", (req, res) => {
-  res.redirect(`./${req.body.name}`)
-})
+  res.redirect(`./${req.body.name}`);
+});
 
 module.exports = router;
