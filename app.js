@@ -8,7 +8,6 @@ const config = require("./config/config");
 const app = express();
 
 const PORT = process.env.PORT ?? 3000;
-console.log(PORT, process.env.PORT);
 config(app);
 
 const MainRoute = require('./routes/views/main.routes');

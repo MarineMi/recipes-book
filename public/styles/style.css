@@ -27,10 +27,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.textoviki p {
+  margin-bottom: 5px;
+}
 .manybut {
   display: flex;
   justify-content: center;
   align-self: end;
+  margin-top: 10px;
 
 }
 .card-img-top {
@@ -59,8 +63,9 @@ img.background {
 }
 .navbar1 {
   width: 100% !important;
+  z-index: 1;
   background-color: white !important;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 650;
   color: white !important;
 }
@@ -97,4 +102,32 @@ img.background {
 }
 .formtop2 {
   margin-top: -5px;
+}
+
+.main {
+  /* margin: 1em 0 0.5em 0; */
+  color: #343434;
+  font-weight: normal;
+  font-family: 'Ultra', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+}
+.recipes{
+  position: absolute;
+  right: 53%;
+}
+.fav{
+  position: absolute;
+  right: 42%;
+}
+.reg, .user {
+  position: absolute;
+ right: 12%;
+}
+
+.log, .out{
+  position: absolute;
+  right: 5%;
 }

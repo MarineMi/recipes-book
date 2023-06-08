@@ -7,33 +7,39 @@ function NavBar({ user }) {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='/'>
-                Рецепты
+              <a className='nav-link active main' aria-current='page' href='/'>
+                Cookbook
               </a>
             </li>
 
             {user ? (
               <>
+                <li className='nav-item'>
+                  <a
+                    className='nav-link active recipes'
+                    aria-current='page'
+                    href='/'>
+                    Рецепты
+                  </a>
+                </li>
                 <li>
                   <a
-                    className='nav-link active'
+                    className='nav-link active fav'
                     aria-current='page'
-                    href='/favorites'
-                  >
+                    href='/favorites'>
                     Избранное
                   </a>
                 </li>
                 <li>
-                  <a className='nav-link active' aria-current='page'>
+                  <a className='nav-link active user' aria-current='page'>
                     {user.name}
                   </a>
                 </li>
                 <li className='nav-item'>
                   <a
-                    className='nav-link active'
+                    className='nav-link active out'
                     aria-current='page'
-                    href='/api/auth/logout'
-                  >
+                    href='/api/auth/logout'>
                     Выйти
                   </a>
                 </li>
@@ -42,19 +48,17 @@ function NavBar({ user }) {
               <>
                 <li className='nav-item'>
                   <a
-                    className='nav-link active'
+                    className='nav-link active reg'
                     aria-current='page'
-                    href='/auth/registration'
-                  >
+                    href='/auth/registration'>
                     Зарегистрироваться
                   </a>
                 </li>
                 <li className='nav-item'>
                   <a
-                    className='nav-link active'
+                    className='nav-link active log'
                     aria-current='page'
-                    href='/auth/qwer'
-                  >
+                    href='/auth/qwer'>
                     Войти
                   </a>
                 </li>
