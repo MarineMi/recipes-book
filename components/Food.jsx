@@ -20,9 +20,16 @@ function Food({ fod }) {
         <div className="card-button">
           <h5 className="card-title">{fod.name}</h5>
           <p className="card-text">{fod.vin}</p>
-          <button data-id={fod.idMeal} type="submit" className="btn btn-warning btn btn-add">
+          <button
+            data-id={fod.idMeal}
+            type="submit"
+            className="btn btn-warning btn btn-add"
+          >
             Add favorit
           </button>
+          <a href={`/info/${fod.idMeal}`} className="btn btn-danger btn-info">
+            Info
+          </a>
           <a href={fod.strYoutube} className="btn btn-danger btn-">
             YouTube
           </a>
