@@ -1,5 +1,4 @@
 const React = require("react");
-const Layout = require("./Layout");
 
 function Food({ fod }) {
   return (
@@ -22,7 +21,7 @@ function Food({ fod }) {
           <p className="card-text">{fod.vin}</p>
           <button
             data-id={fod.idMeal}
-            type="submit"
+            type="button"
             className="btn btn-warning btn btn-add"
           >
             Add favorit
