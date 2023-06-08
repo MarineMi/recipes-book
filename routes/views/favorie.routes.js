@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const axios = require("axios");
 const { Recipe } = require("../../db/models");
-const Favorit = require("../../components/Favorit");
-const MainPage = require("../../components/MainPage");
+const { User } = require("../../db/models");
+const MainPage = require("../../components/MainPage_favorit");
 
 router.get("/", async (req, res) => {
   try {
@@ -27,6 +27,31 @@ router.get("/", async (req, res) => {
     let alldeals = await processArray(dbRec);
 
     res.send(res.renderComponent(MainPage, { title: "main", alldeals }));
+  } catch ({ message }) {
+    res.json({ message });
+  }
+});
+router.delete("/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    let p = res.locals.user;
+    const userf = await User.findAll({
+      where: { name: p.name },
+      raw: true,
+    });
+
+    const result = await Recipe.destroy({
+      where: {
+        user_id: userf[0].id,
+        idMeal: id,
+      },
+    });
+
+    if (result > 0) {
+      res.json({ message: "success" });
+      return;
+    }
+    res.status(401).json({ message: "error" });
   } catch ({ message }) {
     res.json({ message });
   }

@@ -11,9 +11,8 @@ function Food({ fod }) {
         <div>
           <img src={fod.strMealThumb} className="card-img-top" alt="food" />
           <p>{fod.strMeal}</p>
-     <p>Area - {fod.strArea}</p>
+          <p>Area - {fod.strArea}</p>
           <p>Tags - {fod.strTags}</p>
-
         </div>
         <div className="card-button">
           <h5 className="card-title">{fod.name}</h5>
@@ -21,9 +20,9 @@ function Food({ fod }) {
           <button
             data-id={fod.idMeal}
             type="button"
-            className="btn btn-warning btn btn-add"
+            className="btn btn-warning btn btn-delete"
           >
-            Add favorit
+            Delete
           </button>
           <a href={`/info/${fod.idMeal}`} className="btn btn-danger btn-info">
             Info
