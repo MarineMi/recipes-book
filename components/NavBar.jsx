@@ -8,7 +8,7 @@ function NavBar({ user }) {
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
               <a className='nav-link active' aria-current='page' href='/'>
-                Main
+                Рецепты
               </a>
             </li>
 
@@ -34,7 +34,7 @@ function NavBar({ user }) {
                     aria-current='page'
                     href='/api/auth/logout'
                   >
-                    Logout
+                    Выйти
                   </a>
                 </li>
               </>
@@ -46,7 +46,7 @@ function NavBar({ user }) {
                     aria-current='page'
                     href='/auth/registration'
                   >
-                    Registration
+                    Зарегистрироваться
                   </a>
                 </li>
                 <li className='nav-item'>
@@ -55,7 +55,7 @@ function NavBar({ user }) {
                     aria-current='page'
                     href='/auth/qwer'
                   >
-                    LogIn
+                    Войти
                   </a>
                 </li>
               </>

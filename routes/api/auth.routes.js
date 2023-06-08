@@ -34,7 +34,10 @@ router.post("/qwer", async (req, res) => {
     if (!email || !password) {
       res.json({ message: "заполните все поля" });
     } else {
-      const compare = await bcrypt.compare(password, user.password);
+      let compare
+      if (user) {
+        compare = await bcrypt.compare(password, user.password);
+      }
       if (!user || !compare) {
         res.json({
           message: "Такого пользователя не существует или пароль не вверный",
