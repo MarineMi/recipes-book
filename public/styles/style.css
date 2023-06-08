@@ -55,15 +55,26 @@ img.background {
   margin-top: -120px;
 }
 .navbar1 {
+  /* display: flex; */
+  /* align-items: flex-start;
+  justify-content: space-between; */
+
+  text-align: center ;
   width: 100% !important;
   background-color: white !important;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 650;
   opacity: 0.75;
 }
-.log {
-  margin-left: 20px !important;
+.fav{
+  position: fixed;
+  right: 50%;
 }
-.reg {
-  margin-left: 970px !important;
+.reg, .user {
+  position: fixed;
+  right: 13%;
+}
+.log, .out{
+  position: fixed;
+  right: 4%;
 }

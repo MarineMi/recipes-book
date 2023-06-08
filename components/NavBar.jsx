@@ -7,7 +7,7 @@ function NavBar({ user }) {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='/'>
+              <a className='nav-link active main' aria-current='page' href='/'>
                 Main
               </a>
             </li>
@@ -16,7 +16,7 @@ function NavBar({ user }) {
               <>
                 <li>
                   <a
-                    className='nav-link active'
+                    className='nav-link active fav'
                     aria-current='page'
                     href='/favorites'
                   >
@@ -24,13 +24,13 @@ function NavBar({ user }) {
                   </a>
                 </li>
                 <li>
-                  <a className='nav-link active' aria-current='page'>
+                  <a className='nav-link active user' aria-current='page'>
                     {user.name}
                   </a>
                 </li>
                 <li className='nav-item'>
                   <a
-                    className='nav-link active'
+                    className='nav-link active out'
                     aria-current='page'
                     href='/api/auth/logout'
                   >
