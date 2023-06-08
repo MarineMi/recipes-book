@@ -11,8 +11,9 @@ function Food({ fod }) {
         <div>
           <img src={fod.strMealThumb} className="card-img-top" alt="food" />
           <p>{fod.strMeal}</p>
-          <p>Area - {fod.strArea}</p>
+     <p>Area - {fod.strArea}</p>
           <p>Tags - {fod.strTags}</p>
+
         </div>
         <div className="card-button">
           <h5 className="card-title">{fod.name}</h5>

@@ -1,0 +1,14 @@
+const React = require("react");
+const Layout = require("./Layout");
+
+function InsidePage({ title, alldeals, user }) {
+  return (
+    <Layout title={title} user={user}>
+      <h1>{alldeals[0].strMeal}</h1>
+      <img src={alldeals[0].strMealThumb} alt="" />
+      <div>{alldeals[0].strInstructions}</div>
+    </Layout>
+  );
+}
+
+module.exports = InsidePage;
