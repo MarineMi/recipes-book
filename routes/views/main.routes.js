@@ -1,5 +1,8 @@
 const router = require("express").Router();
 const MainPage = require("../../components/MainPage");
+const InsidePage = require("../../components/InsidePage");
+const axios = require("axios");
+
 const { Recipe } = require("../../db/models");
 
 router.get("/", (req, res) => {
@@ -7,6 +10,32 @@ router.get("/", (req, res) => {
   let k = possible.charAt(Math.floor(Math.random() * possible.length));
 
   res.redirect(`./${k}`);
+});
+
+router.get("/info/:cookId", async (req, res) => {
+  try {
+    const { cookId } = req.params;
+
+    const SEARCH_URL = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
+
+    fetch(`${SEARCH_URL}${cookId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        let alldeals = data.meals;
+        if (alldeals == null) {
+          res.redirect(`./`);
+        } else {
+          res.send(
+            res.renderComponent(InsidePage, { title: "Info", alldeals })
+          );
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  } catch ({ message }) {
+    res.json({ message });
+  }
 });
 
 router.get("/:Fodid", (req, res) => {
