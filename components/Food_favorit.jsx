@@ -20,9 +20,9 @@ function Food({ fod }) {
           <button
             data-id={fod.idMeal}
             type="button"
-            className="btn btn-warning btn btn-add"
+            className="btn btn-warning btn btn-delete"
           >
-            Add favorit
+            Delete
           </button>
           <a href={`/info/${fod.idMeal}`} className="btn btn-danger btn-info">
             Info
