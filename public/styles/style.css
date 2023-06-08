@@ -42,6 +42,7 @@ body {
   margin-right: 5px;
 }
 #findfood {
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
