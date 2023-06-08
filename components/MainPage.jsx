@@ -9,10 +9,7 @@ function MainPage({ title, user, alldeals }) {
         {user ? (
           <>
             <div>
-              <a href={`./`} className="btn btn-primary">
-                Random
-              </a>
-              <form id="find food" action="/" method="POST">
+              <form id="findfood" action="/" method="POST">
                 <div className="mb-3">
                   <input
                     name="name"

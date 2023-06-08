@@ -17,7 +17,7 @@ module.exports = {
           key: "id",
         },
       },
-      recipe: {
+      idMeal: {
         allowNull: false,
         type: Sequelize.INTEGER,
       },

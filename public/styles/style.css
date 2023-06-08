@@ -5,6 +5,13 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+#findfood {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .cars_list {
   display: flex;
   flex-wrap: wrap;

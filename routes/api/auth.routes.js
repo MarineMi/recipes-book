@@ -28,7 +28,6 @@ router.post('/registration', async (req, res) => {
 });
 
 router.post('/qwer', async (req, res) => {
-  console.log(444444444);
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ where: { email } });

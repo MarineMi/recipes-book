@@ -10,7 +10,7 @@ function Food({ fod }) {
         style={{ width: "18rem", margin: "5px" }}
       >
         <div>
-          <img src={fod.strMealThumb} className="card-img-top" alt="animal" />
+          <img src={fod.strMealThumb} className="card-img-top" alt="food" />
           <p>{fod.strMeal}</p>
           <p>{fod.strInstructions}</p>
 
@@ -20,7 +20,7 @@ function Food({ fod }) {
         <div className="card-button">
           <h5 className="card-title">{fod.name}</h5>
           <p className="card-text">{fod.vin}</p>
-          <button type="submit" className="btn btn-warning btn btn-add">
+          <button data-id={fod.idMeal} type="submit" className="btn btn-warning btn btn-add">
             Add favorit
           </button>
           <a href={fod.strYoutube} className="btn btn-danger btn-">
