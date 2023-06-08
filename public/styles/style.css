@@ -11,6 +11,7 @@ body {
   justify-content: center;
 }
 
+
 .cardd {
   height: 485px;
   background-color: rgb(255, 255, 255);
@@ -50,3 +51,16 @@ body {
 .findbtn {
   margin-left: 10px;
 }
+img.background {
+  height: auto;
+  width: 100%;
+  margin-top: -120px;
+}
+.navbar1 {
+  width: 100% !important;
+  background-color: white !important;
+  font-size: 17px;
+  font-weight: 650;
+  color: white !important;
+}
+
