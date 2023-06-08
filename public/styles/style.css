@@ -11,10 +11,9 @@ body {
   justify-content: center;
 }
 
-
 .cardd {
+  height: 500px;
   position: relative;
-  height: 485px;
   background-color: rgb(255, 255, 255);
   border: 2px;
   border-style: solid;
@@ -33,14 +32,24 @@ body {
   font-size: 16px;
   text-align: center;
 }
+.mainname{
+  margin-top: 20px;
+  font-size: larger;
+  font-weight: 650;
+  
+}
 .manybut {
+  margin-top: 30px;
+  margin-bottom: 14px;
   display: flex;
   justify-content: center;
   align-self: end;
-  margin-top: 10px;
-position: absolute;
-bottom: 4px;
-left: 14px;
+  position: absolute;
+  bottom: 1px;
+  left: 11px;
+}
+.manybut2 {
+  left: 17px; !important;
 }
 .card-img-top {
   padding: 10px;
@@ -103,10 +112,10 @@ img.background {
 }
 #log-form,
 #reg-form {
-  margin-top: 50px
+  margin-top: 50px;
 }
 .errorst {
-  font-size: 15px
+  font-size: 15px;
 }
 .formtop2 {
   margin-top: -5px;
@@ -116,26 +125,31 @@ img.background {
   /* margin: 1em 0 0.5em 0; */
   color: #343434;
   font-weight: normal;
-  font-family: 'Ultra', sans-serif;
+  font-family: "Ultra", sans-serif;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
   text-shadow: 0 2px white, 0 3px #777;
 }
-.recipes{
+.recipes {
   position: absolute;
   right: 53%;
 }
-.fav{
+.fav {
   position: absolute;
   right: 42%;
 }
-.reg, .user {
+.reg,
+.user {
   position: absolute;
- right: 12%;
+  right: 12%;
 }
 
-.log, .out{
+.log,
+.out {
   position: absolute;
   right: 5%;
+}
+#exampleInputEmail1 {
+  width: 215px;
 }
