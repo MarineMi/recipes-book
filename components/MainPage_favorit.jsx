@@ -1,6 +1,6 @@
 const React = require("react");
 const Layout = require("./Layout");
-const Food = require("./Food")
+const Food = require("./Food_favorit")
 
 function MainPage({ title, user, alldeals }) {
   return (
