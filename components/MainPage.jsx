@@ -18,13 +18,13 @@ function MainPage({ title, user, alldeals }) {
                     className='form-control'
                     id='exampleInputEmail1'
                     aria-describedby='emailHelp'
-                    placeholder='First letter or name'
+                    placeholder='Первая буква или слово'
                   />
                 </div>
 
                 <button type="submit" className="btn btn-secondary findbtn">
       
-                  Find
+                  Найти
                 </button>
               </form>
             </div>

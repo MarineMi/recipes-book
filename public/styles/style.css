@@ -81,6 +81,19 @@ img.background {
   color: white;
   font-size: 30px;
   font-weight: 650;
-
-  
+}
+.form-label {
+  font-size: 17px;
+  font-weight: 650;
+  color: white !important;
+}
+#log-form,
+#reg-form {
+  margin-top: 50px
+}
+.errorst {
+  font-size: 15px
+}
+.formtop2 {
+  margin-top: -5px;
 }

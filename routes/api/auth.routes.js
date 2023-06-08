@@ -32,7 +32,7 @@ router.post("/qwer", async (req, res) => {
     const { email, password } = req.body;
     const user = await User.findOne({ where: { email } });
     if (!email || !password) {
-      res.json({ message: "заполните все поля" });
+      res.json({ message: "Заполните все поля" });
     } else {
       let compare
       if (user) {
@@ -40,7 +40,7 @@ router.post("/qwer", async (req, res) => {
       }
       if (!user || !compare) {
         res.json({
-          message: "Такого пользователя не существует или пароль не вверный",
+          message: "Такого пользователя не существует или пароль неверный",
         });
       } else {
         req.session.userId = user.id;
