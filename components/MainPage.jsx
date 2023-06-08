@@ -37,7 +37,7 @@ function MainPage({ title, user, alldeals }) {
           </>
         ) : (
           <img
-            src='https://incrussia.ru/wp-content/uploads/2020/11/iStock-1175505781.jpg'
+            src="photoglav.png"
             className='background'
             alt=''
           />
