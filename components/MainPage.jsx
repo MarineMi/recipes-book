@@ -10,7 +10,7 @@ function MainPage({ title, user, alldeals }) {
           <>
             <div>
               <form id="findfood" action="/" method="POST">
-                <div className="mb-3">
+                <div className="mb-3 inputmane">
                   <input
                     name="name"
                     type="text"
@@ -20,7 +20,7 @@ function MainPage({ title, user, alldeals }) {
                     placeholder="First letter or name"
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-secondary findbtn">
                   Find
                 </button>
               </form>

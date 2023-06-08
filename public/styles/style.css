@@ -5,15 +5,48 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-#findfood {
+.cars_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.cars_list {
+.cardd {
+  height: 485px;
+  background-color: rgb(255, 255, 255);
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(27, 25, 25); /* Цвет границы */
+  border-radius: 5px;
+  width: 18rem;
+  margin: 10px;
+}
+.textoviki {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.manybut {
+  display: flex;
   justify-content: center;
+  align-self: end;
+
+}
+.card-img-top {
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn-info {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#findfood {
+  display: flex;
+  align-items: center;
+}
+.form-control {
+  margin-top: 16px;
+}
+.findbtn {
+  margin-left: 10px;
 }

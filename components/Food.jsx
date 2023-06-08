@@ -2,39 +2,38 @@ const React = require("react");
 
 function Food({ fod }) {
   return (
-    <form className="card-form" action="" method="POST">
+    <form className="card-formmm" action="" method="POST">
       <div
         data-id={fod.idMeal}
-        className="card"
-        style={{ width: "18rem", margin: "5px" }}
+        className="cardd"
       >
-        <div>
+        <div className="textoviki">
           <img src={fod.strMealThumb} className="card-img-top" alt="food" />
           <p>{fod.strMeal}</p>
-     <p>Area - {fod.strArea}</p>
-          <p>Tags - {fod.strTags}</p>
-
+          <p>Country - {fod.strArea}</p>
+          <p>ㅤ{fod.strTags}</p>
         </div>
-        <div className="card-button">
+        <div className="card-button manybut">
           <h5 className="card-title">{fod.name}</h5>
           <p className="card-text">{fod.vin}</p>
           <button
             data-id={fod.idMeal}
             type="button"
-            className="btn btn-warning btn btn-add"
+            className="btn btn-secondary btn btn-add"
           >
             Add favorit
           </button>
-          <a href={`/info/${fod.idMeal}`} className="btn btn-danger btn-info">
+          <a href={`/info/${fod.idMeal}`} className="btn btn-secondary btn-info">
             Info
           </a>
-          <a href={fod.strYoutube} className="btn btn-danger btn-">
-            YouTube
+          <a href={fod.strYoutube} className="btn btn-secondary btn-">
+            Video
           </a>
         </div>
       </div>
     </form>
   );
+
 }
 
 module.exports = Food;
