@@ -1,11 +1,14 @@
 require("@babel/register");
+require('dotenv').config();
 
 const express = require("express");
-const config = require("./config/config");
 const router = require('express').Router();
+const config = require("./config/config");
+
 const app = express();
 
-const PORT = 3030;
+const PORT = process.env.PORT ?? 3000;
+console.log(PORT, process.env.PORT);
 config(app);
 
 const MainRoute = require('./routes/views/main.routes');
