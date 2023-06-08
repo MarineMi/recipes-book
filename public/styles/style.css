@@ -11,7 +11,6 @@ body {
   justify-content: center;
 }
 
-
 .cardd {
   height: 485px;
   background-color: rgb(255, 255, 255);
@@ -31,7 +30,6 @@ body {
   display: flex;
   justify-content: center;
   align-self: end;
-
 }
 .card-img-top {
   padding: 10px;
@@ -59,8 +57,13 @@ img.background {
 .navbar1 {
   width: 100% !important;
   background-color: white !important;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 650;
-  color: white !important;
+  opacity: 0.75;
 }
-
+.log {
+  margin-left: 20px !important;
+}
+.reg {
+  margin-left: 970px !important;
+}

@@ -42,7 +42,7 @@ function NavBar({ user }) {
               <>
                 <li className='nav-item'>
                   <a
-                    className='nav-link active'
+                    className='nav-link active reg'
                     aria-current='page'
                     href='/auth/registration'
                   >
@@ -51,7 +51,7 @@ function NavBar({ user }) {
                 </li>
                 <li className='nav-item'>
                   <a
-                    className='nav-link active'
+                    className='nav-link active log'
                     aria-current='page'
                     href='/auth/qwer'
                   >
