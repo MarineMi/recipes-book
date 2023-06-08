@@ -6,7 +6,7 @@ const axios = require("axios");
 const { Recipe } = require("../../db/models");
 
 router.get("/", (req, res) => {
-  let possible = "abcdefghijklmnopqrstuvwxyz";
+  let possible = "abcdefghjklmnopqrstuvwxz";
   let k = possible.charAt(Math.floor(Math.random() * possible.length));
 
   res.redirect(`./${k}`);
