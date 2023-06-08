@@ -13,6 +13,7 @@ body {
 
 
 .cardd {
+  position: relative;
   height: 485px;
   background-color: rgb(255, 255, 255);
   border: 2px;
@@ -29,13 +30,17 @@ body {
 }
 .textoviki p {
   margin-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
 }
 .manybut {
   display: flex;
   justify-content: center;
   align-self: end;
   margin-top: 10px;
-
+position: absolute;
+bottom: 4px;
+left: 14px;
 }
 .card-img-top {
   padding: 10px;
@@ -79,8 +84,11 @@ img.background {
   margin-top: 15px;
 }
 .infoinf {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-right: 350px;
+  font-size: 18px;
+  font-weight: 650;
 }
 .ups {
   margin-top: 50px;
