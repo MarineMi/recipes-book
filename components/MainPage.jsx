@@ -18,13 +18,13 @@ function MainPage({ title, user, alldeals }) {
                     className='form-control'
                     id='exampleInputEmail1'
                     aria-describedby='emailHelp'
-                    placeholder='First letter or name'
+                    placeholder='Первая буква или слово'
                   />
                 </div>
 
                 <button type="submit" className="btn btn-secondary findbtn">
       
-                  Find
+                  Найти
                 </button>
               </form>
             </div>
@@ -37,7 +37,7 @@ function MainPage({ title, user, alldeals }) {
           </>
         ) : (
           <img
-            src='https://incrussia.ru/wp-content/uploads/2020/11/iStock-1175505781.jpg'
+            src="photoglav.png"
             className='background'
             alt=''
           />

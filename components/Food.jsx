@@ -21,13 +21,13 @@ function Food({ fod }) {
             type="button"
             className="btn btn-secondary btn btn-add"
           >
-            Add favorit
+            Добавить
           </button>
           <a href={`/info/${fod.idMeal}`} className="btn btn-secondary btn-info">
-            Info
+            Рецепт
           </a>
           <a href={fod.strYoutube} className="btn btn-secondary btn-">
-            Video
+            Видео
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(79, 75, 74);
+  background-color: rgb(81 205 244);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -40,6 +40,7 @@ body {
   margin-right: 5px;
 }
 #findfood {
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
@@ -55,10 +56,6 @@ img.background {
   margin-top: -120px;
 }
 .navbar1 {
-  /* display: flex; */
-  /* align-items: flex-start;
-  justify-content: space-between; */
-
   text-align: center ;
   width: 100% !important;
   background-color: white !important;
@@ -77,4 +74,38 @@ img.background {
 .log, .out{
   position: fixed;
   right: 4%;
+}
+
+.imginf {
+  height: 300px;
+}
+.headinf,
+.infoinf {
+  color: aliceblue;
+  margin-top: 15px;
+}
+.infoinf {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.ups {
+  margin-top: 50px;
+  color: white;
+  font-size: 30px;
+  font-weight: 650;
+}
+.form-label {
+  font-size: 17px;
+  font-weight: 650;
+  color: white !important;
+}
+#log-form,
+#reg-form {
+  margin-top: 50px
+}
+.errorst {
+  font-size: 15px
+}
+.formtop2 {
+  margin-top: -5px;
 }
