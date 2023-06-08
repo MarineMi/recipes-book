@@ -12,7 +12,8 @@ body {
 }
 
 .cardd {
-  height: 485px;
+  height: 500px;
+  position: relative;
   background-color: rgb(255, 255, 255);
   border: 2px;
   border-style: solid;
@@ -26,10 +27,29 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.textoviki p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+.mainname{
+  margin-top: 20px;
+  font-size: larger;
+  font-weight: 650;
+  
+}
 .manybut {
+  margin-top: 30px;
+  margin-bottom: 14px;
   display: flex;
   justify-content: center;
   align-self: end;
+  position: absolute;
+  bottom: 1px;
+  left: 11px;
+}
+.manybut2 {
+  left: 17px; !important;
 }
 .card-img-top {
   padding: 10px;
@@ -58,6 +78,7 @@ img.background {
 .navbar1 {
   text-align: center ;
   width: 100% !important;
+  z-index: 1;
   background-color: white !important;
   font-size: 24px;
   font-weight: 650;
@@ -85,8 +106,11 @@ img.background {
   margin-top: 15px;
 }
 .infoinf {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-right: 350px;
+  font-size: 18px;
+  font-weight: 650;
 }
 .ups {
   margin-top: 50px;
@@ -101,11 +125,44 @@ img.background {
 }
 #log-form,
 #reg-form {
-  margin-top: 50px
+  margin-top: 50px;
 }
 .errorst {
-  font-size: 15px
+  font-size: 15px;
 }
 .formtop2 {
   margin-top: -5px;
+}
+
+.main {
+  /* margin: 1em 0 0.5em 0; */
+  color: #343434;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+}
+.recipes {
+  position: absolute;
+  right: 53%;
+}
+.fav {
+  position: absolute;
+  right: 42%;
+}
+.reg,
+.user {
+  position: absolute;
+  right: 12%;
+}
+
+.log,
+.out {
+  position: absolute;
+  right: 5%;
+}
+#exampleInputEmail1 {
+  width: 215px;
 }

@@ -9,11 +9,11 @@ function Food({ fod }) {
       >
         <div className="textoviki">
           <img src={fod.strMealThumb} className="card-img-top" alt="food" />
-          <p>{fod.strMeal}</p>
+          <p className="mainname">{fod.strMeal}</p>
           <p>Country - {fod.strArea}</p>
           <p>ㅤ{fod.strTags}</p>
         </div>
-        <div className="card-button manybut">
+        <div className="card-button manybut manybut2 ">
           <h5 className="card-title">{fod.name}</h5>
           <p className="card-text">{fod.vin}</p>
           <button
