@@ -15,7 +15,7 @@ function MainPage({ title, user, alldeals }) {
                   <input
                     name='name'
                     type='text'
-                    className='form-control'
+                    className='form-control hghgfjfjf'
                     id='exampleInputEmail1'
                     aria-describedby='emailHelp'
                     placeholder='Первая буква или слово'
@@ -23,7 +23,7 @@ function MainPage({ title, user, alldeals }) {
                 </div>
 
                 <button type="submit" className="btn btn-secondary findbtn">
-      
+
                   Найти
                 </button>
               </form>
