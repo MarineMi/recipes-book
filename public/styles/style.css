@@ -152,3 +152,33 @@ img.background {
 .hghgfjfjf {
   width: 215px;
 }
+
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      /* padding-right: var(--bs-navbar-nav-link-padding-x);
+      padding-left: var(--bs-navbar-nav-link-padding-x); */
+      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  }
+  .navbar-nav {
+  flex-direction: column;
+  height 100px;
+  }
+  .recipes {
+    position: static;
+    /* right: 53%; */
+  }
+  .fav {
+    position: static;
+    /* right: 42%; */
+  }
+  .reg,
+  .user {
+    position: static;
+    /* right: 12%; */
+  }
+  .log,
+  .out {
+    position: static;
+    /* right: 5%; */
+  }
+}
